@@ -7,7 +7,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
 
     mailserver = ("mail.smtp2go.com", 2525) #Fill in start #Fill in end
 
-    # Create socket called clientSocket and establish a TCP connection with mailserver
+    # Create socket called clientSocket and establish a TCP connection with mailserver file
     clientSocket = socket(AF_INET, SOCK_STREAM)
     clientSocket.connect(mailserver)
 
