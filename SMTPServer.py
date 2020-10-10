@@ -1,7 +1,7 @@
 from socket import *
 
 
-def smtp_client(port=587, mailserver='smtp.gmail.com'):
+def smtp_client(port=1025, mailserver='127.0.0.1'):
     msg = "\r\n Hello there NYU network test"
     endmsg = "\r\n.\r\n"
 
@@ -83,4 +83,4 @@ def smtp_client(port=587, mailserver='smtp.gmail.com'):
 
 
 if __name__ == '__main__':
-    smtp_client(587, 'smtp.gmail.com')
+    smtp_client(1025, '127.0.0.1')
